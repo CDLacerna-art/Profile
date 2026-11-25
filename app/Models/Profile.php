@@ -6,12 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
-    protected $fillable = [
-        'full_name', 'course', 'year_section', 'photo_path',
-        'motto', 'bible_verse', 'bible_verse_ref',
-        'facebook_url', 'email', 'github_url',
-        'gcash_name', 'gcash_number', 'gcash_qr_path',
-    ];
+protected $fillable = [
+    'full_name', 'course', 'year_section', 'motto',
+    'bible_verse', 'bible_verse_ref',
+    'facebook_url', 'email', 'github_url',
+    'gcash_name', 'gcash_number',
+    'photo_path', 'gcash_qr_path',
+];
 
     // Full URL of the profile photo, or null if none was uploaded
     public function getPhotoUrlAttribute(): ?string

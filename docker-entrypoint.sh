@@ -4,4 +4,7 @@ php artisan route:cache
 php artisan view:cache
 php artisan migrate --force
 php artisan db:seed --force
-exec apache2-foreground
+php artisan storage:link --force
+exec apache2-foregroundgit add .
+git commit -m "Add profile seeder"
+git push
